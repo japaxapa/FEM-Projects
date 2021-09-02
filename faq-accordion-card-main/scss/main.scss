@@ -1,0 +1,103 @@
+@import "config";
+@import "responsive";
+
+
+// DEFAULT
+body {
+  background: linear-gradient($softViolet, $softBlue);
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 95%;
+  overflow: hidden;
+}
+
+
+// CARD STYLE
+.card {
+  background: white;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+
+// CARD HEADER
+.card__head {
+  display: flex;
+
+}
+
+.card__head-img {
+  position: absolute;
+  display: inline;
+  height: 10vh;
+  transform: translate(-15%, -80%)
+}
+
+
+// CARD CONTENT[
+.card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__content-title {
+  margin-bottom: 2rem;
+}
+
+.drawer {
+  display: grid;
+  grid-row-gap: 0.7rem;
+  margin: 0.7rem 0 0.7rem 0;
+  border-bottom: 1px solid $lightGrayishBlue;
+  padding-bottom: 0.7rem;
+  width: 100%;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer-icon {
+  height: 7px;
+}
+
+.drawer-content {
+  width: 85%;
+  font-size: 0.7rem;
+}
+
+
+// CLICK FUNCTION
+.closed {
+  display: none;
+}
+
+.opened {
+  display: inline;
+}
+
+.active {
+  font-weight: 700;
+}
+
+
+
+
+
+// FOOTER
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1023px) {
+  .mobile {
+    color: white;
+  }
+  .large {
+    display: none;
+  }
+  .card {
+    width: 80vw;
+    max-height: 100%;
+    padding: 2rem 1rem;
+  }
+  .card__head {
+    height: 6vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-bottom: 2rem;
+  }
+  .card__head-img {
+    position: absolute;
+    display: inline;
+    height: 10vh;
+    -webkit-transform: translate(-15%, -80%);
+            transform: translate(-15%, -80%);
+  }
+  .head__img--mobile {
+    position: absolute;
+    max-height: 20vh;
+    -webkit-transform: translate(-55%, -12%);
+            transform: translate(-55%, -12%);
+  }
+  .head__shadow--mobile {
+    position: absolute;
+    -webkit-transform: translate(-50%, 70%);
+            transform: translate(-50%, 70%);
+  }
+  .card__content-title {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  h2 {
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+  .large {
+    color: white;
+  }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 55vh;
+    width: 65vw;
+    padding: 3rem 6rem;
+    overflow: hidden;
+  }
+  .card__head {
+    height: 100%;
+    width: 100%;
+  }
+  .head__box--large {
+    position: absolute;
+    -webkit-transform: translate(11vw, 5vh);
+            transform: translate(11vw, 5vh);
+    z-index: 3;
+  }
+  .head__img--large {
+    position: relative;
+    -webkit-transform: translate(-21%, 30%);
+            transform: translate(-21%, 30%);
+    z-index: 2;
+  }
+  .head__shadow--large {
+    position: absolute;
+    height: 100vh;
+    -webkit-transform: translate(-110%, -27.5%);
+            transform: translate(-110%, -27.5%);
+    z-index: 1;
+  }
+  .card__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  height: 100vh;
+  width: 100vw;
+}
+
+.content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 95%;
+  overflow: hidden;
+}
+
+.card {
+  background: white;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.card__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__head-img {
+  position: absolute;
+  display: inline;
+  height: 10vh;
+  -webkit-transform: translate(-15%, -80%);
+          transform: translate(-15%, -80%);
+}
+
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__content-title {
+  margin-bottom: 2rem;
+}
+
+.drawer {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 0.7rem;
+  margin: 0.7rem 0 0.7rem 0;
+  border-bottom: 1px solid #e7e7e9;
+  padding-bottom: 0.7rem;
+  width: 100%;
+}
+
+.drawer-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drawer-icon {
+  height: 7px;
+}
+
+.drawer-content {
+  width: 85%;
+  font-size: 0.7rem;
+}
+
+.closed {
+  display: none;
+}
+
+.opened {
+  display: inline;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
